@@ -1,0 +1,76 @@
+style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+nav {
+  background-color: #efefef;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* padding: 10px 0; */
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav .button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: black;
+  border: none;
+  border: 1px solid #ddd;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: beige;
+  width: 25%;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transform: scaleX(0);
+  font-size: 30px;
+  font-weight: 500;
+  transform-origin: left;
+  transition: 0.35s;
+}
+
+.active {
+  transform: scaleX(1);
+}
+
+.sidebar ul li a {
+  padding: 15px 0;
+  color: black;
+  display: block;
+}
+nav .cancle{
+    display: none;
+}
+
+nav h1{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
